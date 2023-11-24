@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+    text-shadow: 1px 3px 2px ;
+}
+li{
+    text-align: left;
+    color:rgb(157, 68, 68);
+    line-height: 4;
+}

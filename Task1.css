@@ -1,0 +1,23 @@
+
+
+.id1 {
+    background-color: red;
+    border-style:ridge;
+    border-color: rgb(15, 15, 50); 
+    border-radius: 10px;
+    border-width: 10px;
+    
+}
+div h3{
+    text-decoration: underline;
+}
+h1{
+    text-align: center;
+    text-shadow: 1px 2px 1px rgb(9, 9, 75);
+}
+ol{
+    color: rgb(1, 1, 1);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: blueviolet;
+   }
+

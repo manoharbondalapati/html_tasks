@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>account</title>
+    <style>
+         
+         h1:hover{
+              color: rgb(109, 122, 122);
+              background-color: black;
+         }
+        ::placeholder{
+             color: rgb(6, 6, 233);
+        }
+        label:hover{
+            color: brown;
+        }
+        input:hover{
+             color: rgb(22, 19, 19);
+        }
+
+    </style>
+</head>
+<body>
+    <h1><center>Welcome!!!!....</center></h1>
+
+
+    <h2>Create your account!...</h2>
+    <center>
+        <form action="../Day6/accountsuccess.html">
+            <fieldset>
+                <legend>User Account</legend>
+            <label for="firstName">FirstName:</label>
+            <input required type="text" placeholder="Enter your firstName" id="firstName" name="firstName"/><br>
+            <br>
+            <label for="lastName">lastName:</label>
+            <input required type="text" placeholder="Enter your lastName" id="lastName" name="lastName"/><br>
+            <br>
+            <label for="phno">Phone No:</label>
+            <input  required type="number" placeholder="Enter your phone no" id="phno" name="phno"/><br>
+            <br>
+            <label for="Emai Id">Email Id:</label>
+            <input required type="email" placeholder="Enter your email id" id="email id" name="email id"/><br>
+            <br>
+            <label for="gender">Gender:</label>
+            <input required type="radio" id="male" name="gender"/>
+            <lable for ="male">Male</lable>
+            <input  required type="radio" id="female" name="gender"/>
+            <lable for ="female">female</lable>
+            <input required type="radio" id="transgender" name="gender"/>
+            <lable for ="transgender">Transgender</lable><br><br>
+            <label  for="password">password:</label>
+            <input required type="password" placeholder="Enter your password" id="password" name="password"/>
+            <label for="confrim password">Confrim password:</label>
+            <input required type="password" placeholder="Re Enter your password" id="password" name="password"/><br><br>
+            <p>please upload your recent photograph!..
+            <input  required type="file" name="file"/></p><br>
+            <input  required  type="checkbox" id ="termsandconditions" name="termsandconditions" value="termsandconditions">
+            <label  for="termsandconditions">click checkbox to accept Terms & Conditions</label><br><br>
+            <input  required type="submit" value="submit">
+        
+              <p>You already have an account please login!..
+              <button><a href="./login1.html">Login</a></button></p>
+            
+
+
+        </form>
+        </fieldset>
+    </center>
+    
+</body>
+</html>

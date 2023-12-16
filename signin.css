@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+}
+
+
+.box{
+    border: solid 1px black;
+    display: inline-block;
+    position: relative;
+    left: 550px;
+}
+img{
+    text-align: center;
+    position: relative;
+    left: 700px;
+}
+h1,p{
+    padding: 20px;
+}
+label{
+    padding-left: 20px;
+}
+input{
+    margin-left: 20px;
+    display: inline-block;
+    width: 300px;
+}
+#button{
+     width: 380px;
+     margin-left: 15px;
+}
+#new{
+    position: relative;
+    left: 550px;
+}
+#button2{
+    position: relative;
+    width: 420px;
+    left: 550px;
+    border: solid 1px black;
+}
+
+

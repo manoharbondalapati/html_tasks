@@ -1,0 +1,202 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+     height: 100px;
+     background-color: rgb(73, 73, 153);
+     display: flex;
+     justify-content: space-between;
+     align-items:center;
+     flex-wrap: wrap;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+nav a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+#p1{
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+#p2{
+    position: relative;
+    top: 10px;
+    left: -20px;
+    color: rgb(21, 235, 21);
+}
+.form{
+       border: solid 1px;
+       display: inline-block;
+       position: relative;
+      backdrop-filter:blur(5px);
+       top: -340px;
+       left: 970px;
+       width: 400px;
+       height: 330px;
+       text-align: center;
+       bottom: 0px;
+      
+       
+}
+.form button{
+    display: inline-block;
+    height: 30px;
+    width: 200px;
+    background-color: rgb(118, 118, 205);
+    color: whitesmoke;
+   
+}
+.form h2{
+    position: relative;
+    left: -70px;
+    text-decoration: underline;
+    color: black;
+}
+.form label{
+     color:black;
+     font-size: 20px;
+}
+.places{
+    margin-top: -250px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto;
+    margin-left: 80px;
+    column-gap: 10px;
+    row-gap: 30px;
+}
+h1{
+   position: relative;
+   top: -300px;
+   margin-left: 50px;
+}
+#p3{
+    position: relative;
+    top: -295px;
+    margin-left: 50px;
+}
+footer{
+    height: 400px;
+    background-color: rgb(108, 108, 220);
+    margin-top: 40px;
+}
+footer #overflow{
+   height: 200px;
+   width: 300px;
+   overflow-y: scroll;
+   margin-left: 70px;
+  position: relative;
+  top: 70px;
+}
+footer h3{
+   position: relative;
+   top: 60px;
+   left: 40px;
+   font-size: 30px;
+}
+.booking{
+   position: relative;
+   left: 500px;
+   top: -150px;
+}
+.booking #book{
+    position:relative;
+    top: -15px;
+}
+.booking ol{
+    list-style-type:square;
+}
+.booking ol li{
+    margin-top: 10px;
+
+}
+.attraction{
+    position: relative;
+    top: -400px;
+    left: 900px;
+}
+.attraction #attract{
+    position: relative;
+    top: -25px;
+}
+.attraction ol{
+    position: relative;
+    top: 10px;
+    list-style-type: square;
+    
+}
+.attraction ol li{
+     margin-top: 10px;
+}
+footer .contact{
+     position: relative;
+     top: -550px;
+     left: 1270px;
+}
+footer .contact h3{
+    position: relative;
+    top: -10px;
+
+}
+.contact p{
+    border: solid 1px;
+    background-color: rgb(66, 66, 199);
+    display: inline;
+    position: relative;
+    top: 10px;
+    color: whitesmoke;
+}
+.fheader{
+     height: 90px;
+     background-color: rgb(19, 19, 83);
+     width: 100%;
+}
+.fheader .icons h5{
+    position: relative;
+    left: 550px;
+    font-size: 40px;
+    color: whitesmoke;
+}
+.icons a{
+    position: relative;
+    left: 630px;
+    margin-right: 20px;
+    top: 5px;
+}
+
+/* hover */
+nav a:hover{ 
+    color: rgb(21, 235, 21);
+}
+/* .logo img:hover{
+       transform: scale3d(1.5,1.5,1.5);
+} */
+/* animation */
+.logo img{
+    animation: image 2s infinite;
+}
+@keyframes image{
+          100%{
+            transform: scale3d(2.5,2.5,2.5);
+            transition: 0.5s ease;
+          }
+}
+header #logo{
+    animation: logo 2s infinite;
+}
+@keyframes logo{
+          100%{
+            transform: scale3d(2.5,2.5,2.5);
+            transition: 0.5s ease;
+          }
+}
+
+
+   
+

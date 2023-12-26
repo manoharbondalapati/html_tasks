@@ -1,92 +1,90 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Resume</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Java Script Data Types</h1>
+    <h2><pre>There are 2 types of data types in javascript.
+                   1.primitive Data types.
+                   2.non-primitive Data types.
+    </pre></h2>
+    <h1>Primitive Data Types</h1>
+    <h3>1.number</h3>
+    <p><pre>            ->All the JavaScript numbers are stored as decimal numbers(floating point).
+            ->Numbers can be written with, or without decimal.
+            ->In JavaScript 2^53 is last number.
 
-    </head>
-   
-    <body>
-        
-        <h1><center>Resume</center></h1>
-        <h2><b><u><center>Manohar Bondalapati</center></u></b></h2>
-        <b>Email Id:</b><a 
-            href="mailto : manohar.bondalapati34@gmail.com">manohar.bondalapati34@gmail.com</a><br>
-        <b>Mobile No:</b><a
-            href="tel:9391283589">9391283589</a>
-        <h3><b><u>CAREER OBJECTIVE</u></b></h3>
-        <p>To succed in an environment of growth and excellence and earn a job which  provides me satisfaction and self-development and help me to achieve organizational goal. </p>
-        <hr>
-        <h3><b><u>Education Details</u></b></h3>
-        
-        <table border="1">
-            <tr>
-                <th>Qualification</th>
-                <th>College/Institute</th>
-                <th>Board/University</th>
-                <th>Year Of passing</th>
-                <th>Aggregate/CGPA</th>
-            </tr>
-            <tr>
-                <td>B.Tech(CSE)</td>
-                <td><a href="https://mictech.edu.in/">MIC college of Engineering & Technology</a></td>
-                <td>JNTUK</td>
-                <td>2022</td>
-                <td>8.06</td>
-            </tr>
-            <tr>
-                <td>Intermediate/+2</td>
-                <td><a href="https://www.facebook.com/cvrb3/">Sri Chaitanya Junior college</a></td>
-                <td>Board Of Intermediate Education</td>
-                <td>2018</td>
-                <td>93.2</td>
-            </tr>
-            <tr>
-                <td>S.S.C/10</td>
-                <td><a href="https://schools.org.in/guntur/28171200530/donbosco-english-medium-school-mangalagiri.html" >Don Bosco High School</a></td>
-                <td>Board Of Secondry Education</td>
-                <td>2016</td>
-                <td>8.2</td>
-            </tr>
-        </table>
-        <hr>
-        <h3><b><u>Skill Set</u></b></h3>
-        <ol>
-            <li>C Programming</li>
-            <li>Java</li>
-            <li>python</li>
-            <li>MySQL</li>
-            <li>Html</li>
-        </ol><br>
-        <br>
-        <details>
-            <summary><center> To know more my about my Skill levels</center></summary>
-            <label for="C programming">C Programming::</label>
-            <meter id="C programming" value="7" min="0" max="10"></meter><br>
-            <label for="Java">Java::</label>
-            <meter id="Java" value="8" min="0" max="10"></meter><br>
-            <label for="python">python::</label>
-            <meter id="python" value="6" min="0" max="10"></meter><br>
-            <label for="MySQL">MySQL::</label>
-            <meter id="MySQL" value="7" min="0" max="10"></meter><br>
-            <label for="HTML">HTML::</label>
-            <meter id="HTML" value="9" min="0" max="10"></meter><br>
+                Example:
+                    var num1=900719925740992;
+                    console.log(num1);</pre></p>
+    <h3>2.String</h3>
+    <p><pre>            ->A String(or a text string) is a series of characters like "manohar".
+            ->Strings are written with quotes. You can use single or double quotes.
             
-        </details>
-        <hr>
-        <h3><b><u>Hobbies</u></b></h3>
-        <ol>
-            <li>Listening To music</li>
-            <li>playing out door games</li>
-            <li>playing carrom board</li>
-
-        </ol><hr>
-        <h3><u>Personal Details</u></h3>
-        <p><b>Name:</b>  Bondalapati Manohar</p>
-        <p><b>Fathers's Name:</b>  Bondalapati Yesupadam</p>
-        <p><b>Mother's Name:</b>  Bondalapati Rani</p>
-        <p><b>Date Of Birth:</b>  1-2-2000</p>
-        <address><b>address:</b>14-4/50 prakash nagar, krishna nagar, tadepalli, guntur, Andhra pradesh. </address>
-        
-    </body>
+                Example:
+                    var str1="manoahr";
+                    console.log(str1);</pre></p>
+    <h3>3.bigint</h3>
+    <p><pre>            ->JavaScript bigint is a new datatype that can be used to store values that are too big 
+             to be represented by a normal javascript NUmber.
+                            
+                Example:
+                        var num1=bigint(44585558416387984649797469414197416);
+                        console.log(num1);</pre></p>
+    <h3>4.boolean</h3>
+    <p><pre>            ->JavaScript boolean same as other programming languages true or fasle .
+                                
+                Example:
+                        var iscoding =true;
+                    </pre></p>
+    <h3>5.null</h3>
+    <p><pre>            ->JavaScript in null is only one value in case declaring value with null.
+                                                
+                 Example:
+                        var age =null;
+                    </pre></p>
+     <h3>6.undefined</h3>
+     <p><pre>            -> in JavaScript undefined is a defined as a variable that has not been 
+            assigned a value is undefined.
+                                                                
+                                 Example:
+                                        var age;--> is undefined
+                                    </pre></p>
+    <h3>7.symbol</h3>
+     <p><pre>            -> in JavaScript symbol is unique and that can be used as the key of an 
+            object property.
+                    </pre></p><hr> 
+    <h1>non-Primitive datatype</h1>
+    <h3>1.object</h3>
+     <p><pre>            ->  JavaScript as fundamental data structures used to store collections
+            of data they consists of key-value pairs. Can be used in only {} or the new keyword.
+                                                                
+                                 Example:
+                                        var person={
+                                                     id:123,
+                                                     name:manu,
+                                                     address:andhapradesh,
+                                        }
+                                        console.log(person);
+                                    </pre></p><hr>
+                                    
+      <h1>In JavaScript different types of operators are there.</h1>
+      <h3>1.Arthematic operators</h3>
+      <p><pre>              1.addition 
+              2.substraction
+              3.mutiplication
+              4.division
+              5.modulus(gives remainder)
+              6.increment
+              7.decrement
+         Note: precedence of Arthematic operators is paranthesis(),
+                                                     multiplication,
+                                                     division,
+                                                     addition,
+                                                     substraction.     
+      </pre></p>                              
+</body>
 </html>
-       

@@ -1,92 +1,139 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Resume</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    console.log("increase pattern");
+  for ( let i=1; i<=5; i++)
+           {
+            for (let j=1; j<=i; j++)
+            {
+              console.log(j);
+             }
+             console.log('\n'); 
+   }
 
-    </head>
+    console.log("Decrease pattern");
+     for ( let i=5; i>=0; i--)
+     {
+        for( let j=1; j<=i ; j++)
+        {
+            console.log(j);
+        }
+         console.log("");
+     }
    
-    <body>
         
-        <h1><center>Resume</center></h1>
-        <h2><b><u><center>Manohar Bondalapati</center></u></b></h2>
-        <b>Email Id:</b><a 
-            href="mailto : manohar.bondalapati34@gmail.com">manohar.bondalapati34@gmail.com</a><br>
-        <b>Mobile No:</b><a
-            href="tel:9391283589">9391283589</a>
-        <h3><b><u>CAREER OBJECTIVE</u></b></h3>
-        <p>To succed in an environment of growth and excellence and earn a job which  provides me satisfaction and self-development and help me to achieve organizational goal. </p>
-        <hr>
-        <h3><b><u>Education Details</u></b></h3>
         
-        <table border="1">
-            <tr>
-                <th>Qualification</th>
-                <th>College/Institute</th>
-                <th>Board/University</th>
-                <th>Year Of passing</th>
-                <th>Aggregate/CGPA</th>
-            </tr>
-            <tr>
-                <td>B.Tech(CSE)</td>
-                <td><a href="https://mictech.edu.in/">MIC college of Engineering & Technology</a></td>
-                <td>JNTUK</td>
-                <td>2022</td>
-                <td>8.06</td>
-            </tr>
-            <tr>
-                <td>Intermediate/+2</td>
-                <td><a href="https://www.facebook.com/cvrb3/">Sri Chaitanya Junior college</a></td>
-                <td>Board Of Intermediate Education</td>
-                <td>2018</td>
-                <td>93.2</td>
-            </tr>
-            <tr>
-                <td>S.S.C/10</td>
-                <td><a href="https://schools.org.in/guntur/28171200530/donbosco-english-medium-school-mangalagiri.html" >Don Bosco High School</a></td>
-                <td>Board Of Secondry Education</td>
-                <td>2016</td>
-                <td>8.2</td>
-            </tr>
-        </table>
-        <hr>
-        <h3><b><u>Skill Set</u></b></h3>
-        <ol>
-            <li>C Programming</li>
-            <li>Java</li>
-            <li>python</li>
-            <li>MySQL</li>
-            <li>Html</li>
-        </ol><br>
-        <br>
-        <details>
-            <summary><center> To know more my about my Skill levels</center></summary>
-            <label for="C programming">C Programming::</label>
-            <meter id="C programming" value="7" min="0" max="10"></meter><br>
-            <label for="Java">Java::</label>
-            <meter id="Java" value="8" min="0" max="10"></meter><br>
-            <label for="python">python::</label>
-            <meter id="python" value="6" min="0" max="10"></meter><br>
-            <label for="MySQL">MySQL::</label>
-            <meter id="MySQL" value="7" min="0" max="10"></meter><br>
-            <label for="HTML">HTML::</label>
-            <meter id="HTML" value="9" min="0" max="10"></meter><br>
+    console.log("prime numbers");
+        for(i=2; i<=100; i++)
+        {
+            for(j=2; j<=i ;j++)
+            {
+                if(i%j==0)
+                {
+                 break;
+                }
             
-        </details>
-        <hr>
-        <h3><b><u>Hobbies</u></b></h3>
-        <ol>
-            <li>Listening To music</li>
-            <li>playing out door games</li>
-            <li>playing carrom board</li>
+            }
+            if(i==j){
+              console.log(j); ;
+            }
+            
+        }
 
-        </ol><hr>
-        <h3><u>Personal Details</u></h3>
-        <p><b>Name:</b>  Bondalapati Manohar</p>
-        <p><b>Fathers's Name:</b>  Bondalapati Yesupadam</p>
-        <p><b>Mother's Name:</b>  Bondalapati Rani</p>
-        <p><b>Date Of Birth:</b>  1-2-2000</p>
-        <address><b>address:</b>14-4/50 prakash nagar, krishna nagar, tadepalli, guntur, Andhra pradesh. </address>
+         console.log("fabinocci series")
         
-    </body>
-</html>
+         var  n1=0,n2=1,swap;
+          console.log(n1);
+          console.log(n2);
+         for (i= 1; i<10; i++)
+         {
+           swap = n1+n2;
+            n1=n2;
+            n2=swap;
+            console.log(swap);
+           
+         }
+
+          var employee={
+                        id:456,
+                        name:"manohar",
+                        designation: "Engineer",
+                        salary:"12k",
+                        
+         };
+         console.log(employee)
+
+         employee['role'] = employee ['designation'];
+        // employee1= Object.assign({},{role:employee.designation});
+               console.log(employee);
+               
+
+
+
+
+
+
+ // console.log("dayOfWeek problem");
+//           function dayOfWeeks(day)
+//           {
+//             if(day == 1)
+//             {
+//                 return 'Monday';
+//             }
+//             else if( day == 2)
+//             {
+//                 return 'Tuesday';
+//             }
+//             else if(day == 3 )
+//             {
+//                 return 'Wednesday';
+//             }
+//             else if( day == 4)
+//             {
+//                 return 'Thursday'
+//             }
+//             else if( day == 5)
+//             {
+//                  return 'Friday';
+//             }
+//             else if ( day== 6)
+//             {
+//                 return 'Saturday';
+//             }
+//             else if (day == 7){
+//                  return  'Sunday';
+//             }
+//             else 
+//             {
+                
+//                 console.log("Invalid Day")
+            
+//             }
+             
+//         }
+//           console.log(dayOfWeeks(3));
+//           console.log(dayOfWeeks(8));
+         
        
+        // console.log("even or odd problem");
+    //  function isEven(num)
+    //  {
+    //     if(num % 2 == 0)
+    //     {
+    //         return 'Even';
+    //     }
+    //     else {
+    //         return 'Odd';
+    //     }
+    //  }
+    //  console.log(isEven(4));
+    //  console.log(isEven(7)); 
+   </script>
+</body>
+</html>

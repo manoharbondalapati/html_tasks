@@ -6,107 +6,138 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Object Methods</h1>
-     
-    <h3>1.Object.keys()</h3>
-    <p>
-        <pre>
-          Object.keys method is used to display only object keys
-               for Example     var employee = {id : 12 , name : "manu"};
-                                   console.log(Object.keys(employee));</pre>
-    </p>
-    <h3>2.Object.values()</h3>
-    <p>
-        <pre>
-          Object.keys method is used to display only object values
-               for Example     var employee = {id : 12 , name : "manu"};
-                                   console.log(Object.values(employee));</pre>
-    </p>
-    <h3>3.Object.entries()</h3>
-    <p>
-        <pre>
-          Object.keys method is used to display both keys and values in array format
-               for Example     var employee = {id : 12 , name : "manu"};
-                                   console.log(Object.entries(employee));</pre>
-    </p>
-    <h3>4. .hasOwnProperty()</h3>
-    <p>
-        <pre>
-          this method is used to find wheather the key is present or not in the object
-               for Example     var employee = {id : 12 , name : "manu"};
-                                   console.log(employee.hasOwnProperty("id"));</pre>
-    </p>
-    <h3>5.Object.assign()</h3>
-    <p>
-        <pre>
-          this method is used to copy the values and properties from one or more objects
-               for Example     var employee = {id : 12 , name : "manu"};
-                               var student  = {role: "engineer"}
-                               var details = Object.assign({} , employee, student);
-                               console.log(details);</pre>
-    </p>
-    <h3>6.Object.freeze()</h3>
-    <p>
-        <pre>
-           when this method is wrote cannot change, update, add new properties and values into an object
-               for Example     var employee = {id : 12 , name : "manu"};
-                                   Object.freeze(employee);</pre>
-    </p>
-    <h3>6.Object.seal()</h3>
-    <p>
-        <pre>
-           when this method is wrote cannot change, add new properties and values into an object but 
-           update the properties values.
-               for Example     var employee = {id : 12 , name : "manu"};
-                                  console.log(employee);
-                                var student = Object.seal(employee);
-                                employee.name = 'manohar';
-                                    console.log(student);</pre>
-    </p>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <script>
-       // increase star pattern
-        console.log("increase pattern")
-        for (i=1; i<=5 ; i++)
-        {
-            var str = "";
-            for(j=1; j<=i; j++)
+   <script>
+    console.log("increase pattern");
+  for ( let i=1; i<=5; i++)
+    {
+         var line = "";
+        for (let j=1; j<=i; j++)
             {
-                str = str +"*";
+              line = line +j;
+             }
+             console.log(line); 
+   }
+
+    console.log("Decrease pattern");
+     for ( var i=5; i>=1; i--)
+     {
+        var line = "";
+        for( var j=1; j<=i ; j++)
+        {
+           line= line +j;
+        }
+         console.log(line);
+     }
+   
+        
+        
+    console.log("prime numbers");
+        for(i=2; i<=100; i++)
+        {
+            for(j=2; j<=i ;j++)
+            {
+                if(i%j==0)
+                {
+                 break;
+                }
+            
             }
-          console.log(str) 
+            if(i==j){
+              console.log(j); ;
+            }
+            
         }
 
-          // decrease star pattern
-          console.log("Decrease pattern")
-          for (i=5; i>=1 ; --i)
-        {
-            var str = "";
-            for(j=1; j<=i; j++)
-            {
-                str = str +"*";
-            }
-          console.log(str) 
-        }
-    </script>
+         console.log("fabinocci series")
+        
+         var  n1=0,n2=1,swap;
+          console.log(n1);
+          console.log(n2);
+         for (i= 1; i<10; i++)
+         {
+           swap = n1+n2;
+            n1=n2;
+            n2=swap;
+            console.log(swap);
+           
+         }
+         
+
+          var employee={
+                        id:456,
+                        name:"manohar",
+                        designation: "Engineer",
+                        salary:"12k",
+                        
+         };
+         console.log(employee);
+         employee.role = employee.designation;
+         delete employee.designation;
+         console.log(employee);
+
+        
+               
+
+
+
+
+
+
+ // console.log("dayOfWeek problem");
+//           function dayOfWeeks(day)
+//           {
+//             if(day == 1)
+//             {
+//                 return 'Monday';
+//             }
+//             else if( day == 2)
+//             {
+//                 return 'Tuesday';
+//             }
+//             else if(day == 3 )
+//             {
+//                 return 'Wednesday';
+//             }
+//             else if( day == 4)
+//             {
+//                 return 'Thursday'
+//             }
+//             else if( day == 5)
+//             {
+//                  return 'Friday';
+//             }
+//             else if ( day== 6)
+//             {
+//                 return 'Saturday';
+//             }
+//             else if (day == 7){
+//                  return  'Sunday';
+//             }
+//             else 
+//             {
+                
+//                 console.log("Invalid Day")
+            
+//             }
+             
+//         }
+//           console.log(dayOfWeeks(3));
+//           console.log(dayOfWeeks(8));
+         
+       
+        // console.log("even or odd problem");
+    //  function isEven(num)
+    //  {
+    //     if(num % 2 == 0)
+    //     {
+    //         return 'Even';
+    //     }
+    //     else {
+    //         return 'Odd';
+    //     }
+    //  }
+    //  console.log(isEven(4));
+    //  console.log(isEven(7)); 
+   </script>
 </body>
 </html>

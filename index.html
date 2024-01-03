@@ -1,92 +1,66 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Resume</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Difference Between slice() & substring() methods
+        // slice()  method extracts a part of a string
+        //  the method returns the extracted part in a new string.
+        var str = "Hello world!";
+       console.log(str.length);
+       var result = str.slice(0,10);
+       console.log(result);
+       var result1 = str.slice(3);
+       console.log(result1);
+        var result2 = str.slice(1,1);
+        console.log(result2);// empty string as o/p in substring aslo
+    //substring
+        var result3 = str.substring(1,1);
+        console.log(result3);// same as slice
+          var result4 = str.slice(13,1);
+          console.log(result4);// in this case aslo give empty string
+  // in sbustring it swaps the  values and gives o/p
+         var result5 = str.substring(13,1);
+         console.log(result5); 
+  //in substring it cannot allow negative values
+         var result6 = str.substring(-2,-5);
+          console.log(result6);
+  // in slice method it allows negative values
+         var result7 = str.slice(-5, -2);
+         console.log(result7);
 
-    </head>
-   
-    <body>
-        
-        <h1><center>Resume</center></h1>
-        <h2><b><u><center>Manohar Bondalapati</center></u></b></h2>
-        <b>Email Id:</b><a 
-            href="mailto : manohar.bondalapati34@gmail.com">manohar.bondalapati34@gmail.com</a><br>
-        <b>Mobile No:</b><a
-            href="tel:9391283589">9391283589</a>
-        <h3><b><u>CAREER OBJECTIVE</u></b></h3>
-        <p>To succed in an environment of growth and excellence and earn a job which  provides me satisfaction and self-development and help me to achieve organizational goal. </p>
-        <hr>
-        <h3><b><u>Education Details</u></b></h3>
-        
-        <table border="1">
-            <tr>
-                <th>Qualification</th>
-                <th>College/Institute</th>
-                <th>Board/University</th>
-                <th>Year Of passing</th>
-                <th>Aggregate/CGPA</th>
-            </tr>
-            <tr>
-                <td>B.Tech(CSE)</td>
-                <td><a href="https://mictech.edu.in/">MIC college of Engineering & Technology</a></td>
-                <td>JNTUK</td>
-                <td>2022</td>
-                <td>8.06</td>
-            </tr>
-            <tr>
-                <td>Intermediate/+2</td>
-                <td><a href="https://www.facebook.com/cvrb3/">Sri Chaitanya Junior college</a></td>
-                <td>Board Of Intermediate Education</td>
-                <td>2018</td>
-                <td>93.2</td>
-            </tr>
-            <tr>
-                <td>S.S.C/10</td>
-                <td><a href="https://schools.org.in/guntur/28171200530/donbosco-english-medium-school-mangalagiri.html" >Don Bosco High School</a></td>
-                <td>Board Of Secondry Education</td>
-                <td>2016</td>
-                <td>8.2</td>
-            </tr>
-        </table>
-        <hr>
-        <h3><b><u>Skill Set</u></b></h3>
-        <ol>
-            <li>C Programming</li>
-            <li>Java</li>
-            <li>python</li>
-            <li>MySQL</li>
-            <li>Html</li>
-        </ol><br>
-        <br>
-        <details>
-            <summary><center> To know more my about my Skill levels</center></summary>
-            <label for="C programming">C Programming::</label>
-            <meter id="C programming" value="7" min="0" max="10"></meter><br>
-            <label for="Java">Java::</label>
-            <meter id="Java" value="8" min="0" max="10"></meter><br>
-            <label for="python">python::</label>
-            <meter id="python" value="6" min="0" max="10"></meter><br>
-            <label for="MySQL">MySQL::</label>
-            <meter id="MySQL" value="7" min="0" max="10"></meter><br>
-            <label for="HTML">HTML::</label>
-            <meter id="HTML" value="9" min="0" max="10"></meter><br>
-            
-        </details>
-        <hr>
-        <h3><b><u>Hobbies</u></b></h3>
-        <ol>
-            <li>Listening To music</li>
-            <li>playing out door games</li>
-            <li>playing carrom board</li>
 
-        </ol><hr>
-        <h3><u>Personal Details</u></h3>
-        <p><b>Name:</b>  Bondalapati Manohar</p>
-        <p><b>Fathers's Name:</b>  Bondalapati Yesupadam</p>
-        <p><b>Mother's Name:</b>  Bondalapati Rani</p>
-        <p><b>Date Of Birth:</b>  1-2-2000</p>
-        <address><b>address:</b>14-4/50 prakash nagar, krishna nagar, tadepalli, guntur, Andhra pradesh. </address>
-        
-    </body>
-</html>
+// task 2 how many charachters,words,lines in a string
+     var str = "my name is manohar, Iam from Tadepalli";
+     var characters =str.split("");// characters
+     console.log( " no of characters in a above string",characters);
+     var words = str.split(" ");//words
+      console.log("no of words in a above string",words);
+
+// task3 convert string to array and array to string
+    var str = "Iam manohar from Tadepalli";
+    var toarray = str.split(" ");
+    console.log(toarray);//array converted
+    var array = ["manohar", "manu", "ma"];
+    var tostring = array.join('-');
+    console.log(tostring);// string converted with ifens
+
+// phone number in array and add +1 to each digit
+     var ph = [9,3,9,1,2,8,3,5,8,9];
+     console.log(ph);
+    
+      for (i =0; i<ph.length; i++)
+      {
+        var add = (Number(ph[i]))+1
        
+        console.log(add);
+    
+      }
+    
+    </script>
+</body>
+</html>
